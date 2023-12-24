@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Audio Form</title>
+</head>
+<body>
+  <h1>Upload Audio</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="songName">Tên bài hát:</label>
+    <input type="text" id="songName" name="name" required><br><br>
+
+    <label for="audioFile">File âm thanh:</label>
+    <input type="file" id="audioFile" name="audioFile" accept=".mp3, .wav" required><br><br>
+
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
